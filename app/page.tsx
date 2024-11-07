@@ -1,7 +1,8 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div>Welcome to the biggest projects of my life</div>
+    <div>
+      <h1 className="h1-bold">hello there</h1>
+    
+    </div>
   );
 }
