@@ -2,6 +2,7 @@ import { SignedIn, UserButton } from '@clerk/nextjs'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import Searchbar from './Searchbar'
 
 const Navbar = () => {
   return (
@@ -20,7 +21,7 @@ const Navbar = () => {
             Code<span className='text-primary-500'>Query</span>
         </p>
         </Link>
-        Global search
+        <Searchbar/>
         <div>
             theme
             <SignedIn>
