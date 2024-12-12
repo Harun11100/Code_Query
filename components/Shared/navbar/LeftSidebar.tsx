@@ -6,8 +6,9 @@ import React from "react";
 import { auth, signOut } from "@/auth";
 import ROUTES from "@/constants/routes";
 
-import NavLinks from "./navbar/NavLinks";
+
 import { Button } from "@/components/ui/button";
+import NavLinks from "./NavLink";
 
 const LeftSidebar = async () => {
   const session = await auth();
