@@ -16,10 +16,11 @@ import {
 import { Button } from "@/components/ui/button";
 import { LogOut } from "lucide-react";
 import ROUTES from "@/constants/routes";
+import NavLinks from "./NavLink";
 
 const MobileNavigation = async () => {
-  const session = await auth();
-  const userId = session?.user?.id;
+  // const session = await auth();
+  // const userId = session?.user?.id;
 
   return (
     <Sheet>
@@ -61,11 +62,11 @@ const MobileNavigation = async () => {
             {userId ? (
               <SheetClose asChild>
                 <form
-                  action={async () => {
-                    "use server";
+                  // action={async () => {
+                  //   "use server";
 
-                    await signOut();
-                  }}
+                  //   await signOut();
+                  // }}
                 >
                   <Button
                     type="submit"
