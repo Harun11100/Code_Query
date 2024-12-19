@@ -1,8 +1,16 @@
+import LocalSearch from '@/components/localSearch'
 import React from 'react'
 
 const Home = () => {
   return (
-    <div>Home</div>
+   <section>
+     <LocalSearch
+          route="/"
+          imgSrc="/icons/search.svg"
+          placeholder="Search questions..."
+          otherClasses="flex-1"
+        />
+   </section>
   )
 }
 
